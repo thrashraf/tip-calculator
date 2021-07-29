@@ -65,7 +65,7 @@ const calculateBill = (tipValue) => {
 const errorHandler = () => {
 
     peoples.style.borderColor  = "red";
-    warning.innerHTML = `This From Cannot be Empty`;
+    warning.innerHTML = `This Form Cannot be Empty`;
     warning.style.color = 'red';
     totalOnePerson.innerHTML = `$0.00`;
     totalAll.innerHTML = `$0.00`;
@@ -85,6 +85,7 @@ const reset = () => {
     peoples.value = '';
     inputBill.value = '';
     buttonHandler();
+    customTip.value = null;
 };
 
 buttons.forEach(button => button.addEventListener('click', clickedButton));
